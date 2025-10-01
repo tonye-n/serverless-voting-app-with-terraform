@@ -10,10 +10,10 @@ output "apigw_endpoint" {
 # Module 4 - Realtime Updates
 # ---------------------------------------------------------
 
-# output "iotcore_endpoint" {
-#   value = data.aws_iot_endpoint.current.endpoint_address
-# }
+output "iotcore_endpoint" {
+  value = data.aws_iot_endpoint.current.endpoint_address
+}
 
-# output "cognito_identity_pool_id" {
-#   value = aws_cognito_identity_pool.main.id
-# }
+output "cognito_identity_pool_id" {
+  value = aws_cognito_identity_pool.main.id
+}
